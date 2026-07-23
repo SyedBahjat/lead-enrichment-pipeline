@@ -1,0 +1,5 @@
+google-maps-scraper/
+pipeline/.venv/
+pipeline/output/
+pipeline/queries_test.txt
+.DS_Store
