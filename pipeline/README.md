@@ -8,11 +8,14 @@ Docker Desktop running. Python venv is already set up in `.venv/`.
 
 ## Quick start
 
+From the repo root (a sample `queries.txt` is included):
+
 ```bash
-cd pipeline
-echo "dentist in Munich, Germany" > queries.txt
-./run_pipeline.sh queries.txt munich_dentists 10
+./run_pipeline.sh                                  # uses queries.txt, auto run name
+./run_pipeline.sh queries.txt munich_dentists 10   # explicit name + depth
 ```
+
+First run auto-creates the Python venv. Only requirement: Docker running.
 
 Output lands in `output/`:
 
